@@ -1,7 +1,9 @@
 package scrap.heap.refactor;
 
 /**
+ * Cake class
  *
+ * @author prasan 
  */
 public class Cake {
 

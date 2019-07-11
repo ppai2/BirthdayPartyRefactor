@@ -1,7 +1,9 @@
 package scrap.heap.refactor;
 
 /**
+ * Balloon class
  *
+ * @author prasan
  */
 public class Balloon {
 	private final String balloonColor;

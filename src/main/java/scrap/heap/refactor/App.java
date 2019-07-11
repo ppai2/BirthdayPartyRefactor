@@ -1,6 +1,9 @@
 package scrap.heap.refactor;
 
 /**
+ *
+ * Main class
+ *
  * @author prasan
  */
 public class App {
@@ -10,15 +13,17 @@ public class App {
 
     public static void main(String[] args) {
 
-         //Place birthday party orders
+        // balloon objects
         Balloon balloonObject1 = new Balloon("red", "mylar", "4");
         Balloon balloonObject2 = new Balloon("blue", "latex", "7");
         Balloon balloonObject3 = new Balloon("yellow", "mylar", "4");
 
+        // cake objects
         Cake cakeObject1 = new Cake("chocolate", "chocolate", "circle", "large", "brown");
         Cake cakeObject2 = new Cake("Vanilla", "chocolate", "square", "med", "brown");
         Cake cakeObject3 = new Cake("vanilla", "vanilla", "square", "small", "yellow");
 
+        // party object for order
         Party partyObject1 = new Party(balloonObject1, cakeObject1);
         Order orderObject1 = new Order(partyObject1);
         orderObject1.order();

@@ -1,5 +1,10 @@
 package scrap.heap.refactor;
 
+/**
+ * Party class
+ *
+ * @author prasan
+ */
 public class Party {
 
 	private final Balloon balloon;

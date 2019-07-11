@@ -1,5 +1,8 @@
 package scrap.heap.refactor;
 
+/**
+ * @author prasan
+ */
 public class App {
     public String getGreeting() {
         return "Hello world.";
@@ -8,31 +11,24 @@ public class App {
     public static void main(String[] args) {
 
          //Place birthday party orders
-         order("red", "mylar", "4", "chocolate", "chocolate", "circle", "large", "brown" );
-         order("blue", "latex", "7", "Vanilla", "chocelate", "square", "med", "brown" );
-         order("yellow", "mylar", "4", "vanilla", "vanilla", "square", "small", "yellow" );
+        Balloon balloonObject1 = new Balloon("red", "mylar", "4");
+        Balloon balloonObject2 = new Balloon("blue", "latex", "7");
+        Balloon balloonObject3 = new Balloon("yellow", "mylar", "4");
 
+        Cake cakeObject1 = new Cake("chocolate", "chocolate", "circle", "large", "brown");
+        Cake cakeObject2 = new Cake("Vanilla", "chocolate", "square", "med", "brown");
+        Cake cakeObject3 = new Cake("vanilla", "vanilla", "square", "small", "yellow");
+
+        Party partyObject1 = new Party(balloonObject1, cakeObject1);
+        Order orderObject1 = new Order(partyObject1);
+        orderObject1.order();
+
+        Party partyObject2 = new Party(balloonObject2, cakeObject2);
+        Order orderObject2 = new Order(partyObject2);
+        orderObject2.order();
+
+        Party partyObject3 = new Party(balloonObject3, cakeObject3);
+        Order orderObject3 = new Order(partyObject3);
+        orderObject3.order();
     }
-
-    private static void order(String balloonColor, String material, String number, String flavor, String frostingFlavor, String shape, String size, String cakeColor){
-
-        orderBalloons(balloonColor, material, number);
-
-        orderCake(frostingFlavor, flavor, shape, size, cakeColor);
-    }
-
-    private static void orderBalloons(String balloonColor, String material, String number){
-
-        //for the purposes of this exercise, pretend this method works and adds balloons to the order
-        System.out.println("Balloons ordered; " + balloonColor + ", " + material  + ", " + number);
-
-    }
-
-    private static void orderCake(String flavor, String frostingFlavor, String shape, String size, String cakeColor){
-
-        //for the purposes of this exercise, pretend that this method adds a cake to the order
-        System.out.println("cake ordered; " + flavor + ", " + frostingFlavor  + ", " + shape + ", " + size + ", " + cakeColor);
-
-    }
-
 }

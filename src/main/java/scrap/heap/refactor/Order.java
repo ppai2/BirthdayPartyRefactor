@@ -7,15 +7,20 @@ package scrap.heap.refactor;
  */
 public class Order {
 
-	private final Party party;
+	private final String name;
+	private final Balloon balloon;
+	private final Cake cake;
 
-	public Order(Party party) {
-		this.party = party;
+	public Order(String name, Balloon balloon, Cake cake) {
+		this.name = name;
+		this.balloon = balloon;
+		this.cake = cake;
 	}
 
 	public void order() {
 
-		party.order();
+		balloon.order();
 
+		cake.order();
 	}
 }

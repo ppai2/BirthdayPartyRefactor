@@ -3,7 +3,7 @@ package scrap.heap.refactor;
 /**
  * Cake class
  *
- * @author prasan 
+ * @author prasan
  */
 public class Cake {
 

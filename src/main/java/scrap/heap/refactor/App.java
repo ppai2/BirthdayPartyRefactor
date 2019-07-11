@@ -13,27 +13,20 @@ public class App {
 
     public static void main(String[] args) {
 
-        // balloon objects
         Balloon balloonObject1 = new Balloon("red", "mylar", "4");
-        Balloon balloonObject2 = new Balloon("blue", "latex", "7");
-        Balloon balloonObject3 = new Balloon("yellow", "mylar", "4");
-
-        // cake objects
         Cake cakeObject1 = new Cake("chocolate", "chocolate", "circle", "large", "brown");
-        Cake cakeObject2 = new Cake("Vanilla", "chocolate", "square", "med", "brown");
-        Cake cakeObject3 = new Cake("vanilla", "vanilla", "square", "small", "yellow");
-
-        // party object for order
-        Party partyObject1 = new Party(balloonObject1, cakeObject1);
-        Order orderObject1 = new Order(partyObject1);
+        Order orderObject1 = new Order("party 1", balloonObject1, cakeObject1);
         orderObject1.order();
 
-        Party partyObject2 = new Party(balloonObject2, cakeObject2);
-        Order orderObject2 = new Order(partyObject2);
+        Balloon balloonObject2 = new Balloon("blue", "latex", "7");
+        Cake cakeObject2 = new Cake("Vanilla", "chocolate", "square", "med", "brown");
+        Order orderObject2 = new Order("party 2", balloonObject2, cakeObject2);
         orderObject2.order();
 
-        Party partyObject3 = new Party(balloonObject3, cakeObject3);
-        Order orderObject3 = new Order(partyObject3);
+
+        Balloon balloonObject3 = new Balloon("yellow", "mylar", "4");
+        Cake cakeObject3 = new Cake("vanilla", "vanilla", "square", "small", "yellow");
+        Order orderObject3 = new Order("party 3", balloonObject3, cakeObject3);
         orderObject3.order();
     }
 }

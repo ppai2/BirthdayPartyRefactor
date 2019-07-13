@@ -31,6 +31,16 @@ public class Balloon {
 	public void order(){
 
 		//for the purposes of this exercise, pretend this method works and adds balloons to the order
+
 		System.out.println("Balloons ordered; " + getBalloonColor() + ", " + getMaterial() + ", " + getNumber());
+	}
+
+	@Override
+	public String toString() {
+		return "Balloon{" +
+				"balloonColor='" + balloonColor + '\'' +
+				", material='" + material + '\'' +
+				", number='" + number + '\'' +
+				'}';
 	}
 }

@@ -47,4 +47,15 @@ public class Cake {
 
 		System.out.println("Cake ordered; " + getFlavor() + ", " + getFrostingFlavor() + ", " + getShape() + ", " + getSize() + ", " + getCakeColor());
 	}
+
+	@Override
+	public String toString() {
+		return "Cake{" +
+				"flavor='" + flavor + '\'' +
+				", frostingFlavor='" + frostingFlavor + '\'' +
+				", shape='" + shape + '\'' +
+				", size='" + size + '\'' +
+				", cakeColor='" + cakeColor + '\'' +
+				'}';
+	}
 }

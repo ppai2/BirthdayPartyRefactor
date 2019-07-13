@@ -17,10 +17,29 @@ public class Order {
 		this.cake = cake;
 	}
 
-	public void order() {
+	public boolean order() {
+		if (balloon == null || cake == null) {
+			return false;
+		}
 
 		balloon.order();
-
 		cake.order();
+
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Order{" +
+				"name='" + name + '\'' +
+				", balloon material=" + balloon.getMaterial() +
+				", balloon number=" + balloon.getNumber() +
+				", balloon color=" + balloon.getBalloonColor() +
+				", cake flavor=" + cake.getFlavor() +
+				", cake frosting flavor=" + cake.getFrostingFlavor() +
+				", cake shape=" + cake.getShape() +
+				", cake size=" + cake.getSize() +
+				", cake color=" + cake.getCakeColor() +
+				'}';
 	}
 }

@@ -1,7 +1,7 @@
 package scrap.heap.refactor;
 
 /**
- * Order class
+ * Order class to hold information specific to order
  *
  * @author prasan
  */

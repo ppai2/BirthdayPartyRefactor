@@ -1,7 +1,7 @@
 package scrap.heap.refactor;
 
 /**
- * Balloon class
+ * Balloon class to hold information specific to balloon
  *
  * @author prasan
  */
